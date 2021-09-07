@@ -1,0 +1,369 @@
+/*
+Theme Name: Abril Jonathan Vieira
+Author: Jonathan Vieira
+Author URI: http://jonathanvieira.com.br
+Description: 
+Version: 1.0
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+*/
+
+/* GRID SYSTEM */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+  
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background: #ebebef;
+    padding: 6px 0;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0 20px
+}
+
+.brand-img {
+    max-width: 100px;
+}
+
+.row {
+	margin: 0 -20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-nav #menu-header-menu {
+    display: flex;
+    list-style: none;
+}
+
+.header-nav #menu-header-menu li {
+    margin-right: 20px;
+}
+
+.header-nav #menu-header-menu li:last-child {
+    margin-right: 0;
+}
+
+.header-nav #menu-header-menu li a {
+    text-decoration: none;
+    color: #ae0f09;
+    font-weight: 300;
+    font-size: 1em;
+}
+
+.wrap {
+    margin-top: 30px;
+}
+
+.item-card {
+    display: flex;
+    border-bottom: 1px solid #ececec;
+    margin: 50px 0;
+    padding-bottom: 50px;
+}
+
+@media(max-width: 580px) {
+    .item-card {
+        flex-direction: column;
+    }
+    .root-cards .item-card .sub-item:last-child  {
+        margin-left: 0;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .col-xs-6 {
+        text-align: center;
+    }
+    .col-md-6 {
+        display: none;
+    }
+    .root-cards .item-card .thumb img {
+        max-width: 100%;
+    }
+}
+
+.item-card .thumb {
+    max-width: 100%;
+}
+.item-card .thumb img {
+    max-width: 300px;
+}
+
+.item-card .sub-item:last-child {
+    margin-left: 20px;
+}
+
+.item-card .sub-item > h1 {
+    line-height: 27px;
+}
+.item-card .sub-item h1 > a {
+    text-decoration: none;
+    font-size: 24px;
+    color: #000;
+}
+
+.item-card .sub-item > p.date {
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.item-card .sub-item .excerpt {
+    margin-top: 10px;
+}
+.item-card .sub-item .excerpt p{
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.bt-load {
+    text-align: center;
+}
+
+#loading {
+    display: none;
+    margin-bottom: 20px;
+}
+
+.bt-load > button {
+    border: none;
+    background: #ae0f09;
+    cursor: pointer;
+    padding: 10px 35px;
+    color: #fff;
+    font-size: 18px;
+}
+
+footer {
+    background: #ebebef;
+    margin-top: 100px;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.container:before,
+.container:after,
+.row:before,
+.row:after {
+	clear: both;
+	content: ''
+}
+
+[class^='col-xs'],
+[class^='col-sm'],
+[class^='col-md'],
+[class^='col-lg'] {
+	position: relative;
+	float: left;
+	padding: 0 20px;
+	min-height: 0
+}
+
+.col-xs-12 {
+	width: 100%
+}
+
+.col-xs-11 {
+	width: 91.66666667%
+}
+
+.col-xs-10 {
+	width: 83.33333333%
+}
+
+.col-xs-9 {
+	width: 75%
+}
+
+.col-xs-8 {
+	width: 66.66666667%
+}
+
+.col-xs-7 {
+	width: 58.33333333%
+}
+
+.col-xs-6 {
+	width: 50%
+}
+
+.col-xs-5 {
+	width: 41.66666667%
+}
+
+.col-xs-4 {
+	width: 33.33333333%
+}
+
+.col-xs-3 {
+	width: 25%
+}
+
+.col-xs-2 {
+	width: 16.66666667%
+}
+
+.col-xs-1 {
+	width: 8.33333333%
+}
+
+@media(min-width:768px) {
+	.container {
+		width: 740px
+	}
+	.col-sm-12 {
+		width: 100%
+	}
+	.col-sm-11 {
+		width: 91.66666667%
+	}
+	.col-sm-10 {
+		width: 83.33333333%
+	}
+	.col-sm-9 {
+		width: 75%
+	}
+	.col-sm-8 {
+		width: 66.66666667%
+	}
+	.col-sm-7 {
+		width: 58.33333333%
+	}
+	.col-sm-6 {
+		width: 50%
+	}
+	.col-sm-5 {
+		width: 41.66666667%
+	}
+	.col-sm-4 {
+		width: 33.33333333%
+	}
+	.col-sm-3 {
+		width: 25%
+	}
+	.col-sm-2 {
+		width: 16.66666667%
+	}
+	.col-sm-1 {
+		width: 8.33333333%
+	}
+}
+
+@media(min-width:992px) {
+	.container {
+		width: 960px
+	}
+	.col-md-12 {
+		width: 100%
+	}
+	.col-md-11 {
+		width: 91.66666667%
+	}
+	.col-md-10 {
+		width: 83.33333333%
+	}
+	.col-md-9 {
+		width: 75%
+	}
+	.col-md-8 {
+		width: 66.66666667%
+	}
+	.col-md-7 {
+		width: 58.33333333%
+	}
+	.col-md-6 {
+		width: 50%
+	}
+	.col-md-5 {
+		width: 41.66666667%
+	}
+	.col-md-4 {
+		width: 33.33333333%
+	}
+	.col-md-3 {
+		width: 25%
+	}
+	.col-md-2 {
+		width: 16.66666667%
+	}
+	.col-md-1 {
+		width: 8.33333333%
+	}
+}
+
+@media(min-width:1200px) {
+	.container {
+		width: 1160px
+	}
+	.col-lg-12 {
+		width: 100%
+	}
+	.col-lg-11 {
+		width: 91.66666667%
+	}
+	.col-lg-10 {
+		width: 83.33333333%
+	}
+	.col-lg-9 {
+		width: 75%
+	}
+	.col-lg-8 {
+		width: 66.66666667%
+	}
+	.col-lg-7 {
+		width: 58.33333333%
+	}
+	.col-lg-6 {
+		width: 50%
+	}
+	.col-lg-5 {
+		width: 41.66666667%
+	}
+	.col-lg-4 {
+		width: 33.33333333%
+	}
+	.col-lg-3 {
+		width: 25%
+	}
+	.col-lg-2 {
+		width: 16.66666667%
+	}
+	.col-lg-1 {
+		width: 8.33333333%
+	}
+}
+
+@media(max-width:767px) {
+	.hidden-xs {
+		display: none
+	}
+}
+
+@media(min-width:768px) and (max-width:991px) {
+	.hidden-sm {
+		display: none
+	}
+}
+
+@media(min-width:992px) and (max-width:1199px) {
+	.hidden-md {
+		display: none
+	}
+}
+
+@media(min-width:1200px) {
+	.hidden-lg {
+		display: none
+	}
+}
